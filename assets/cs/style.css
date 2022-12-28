@@ -94,9 +94,21 @@ main > *{
     box-shadow: 2px 1px  black;
 }
 
-aside {
-    border-radius: 1%;
-    width:20%;
+
+.Information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: :space-around;
+}
+
+aside div {
+   
+    height: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 @media screen and (max-width:600px) {
