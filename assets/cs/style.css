@@ -20,6 +20,11 @@ main{
     justify-content:space-around;
     align-items:center
 }
+aside {
+    display:flex;
+    flex-direction: column;
+    align-text: center;
+}
 
 main section{
     /* background-color: green; */
@@ -40,7 +45,7 @@ main section h1{
 
 main section div{
     /* background-color: orange; */
-    border: 1px dotted yellow;
+    
     border-radius: 1%;
     width: 80%;
     height: 60%;
@@ -54,33 +59,39 @@ main section div button {
     width: 80%;
     height: 20%;
     background-color: inherit;
-    border: solid 5px white;
+    border: solid 5px black;
     border-radius: 1%;
-    color: white;
+    color: black;
 }
 button:active {
-    opacity: 20%;
+  
     background-color: black;
     box-shadow: 0 5px #666;
     transform: translateY(4px) scale(80%)
 }
 
-.activated-before {
-    background-color: black;
-    text-decoration: line-through;
-    opacity: 20%;
+#whatIsThis{
+ 
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 5px yellow;
+    transform: translateY(4px) scale(80%)
 }
 
-.whatisthis {
+/* .activated-before {
+    background-color: black;
     
-}
+    opacity: 20%;
+} */
+
+
 
 
 
 main > *{
     height: 90%;
-    border: 2px solid white;
-    box-shadow: 2px 1px  whitesmoke;
+    border: 2px solid black;
+    box-shadow: 2px 1px  black;
 }
 
 aside {
