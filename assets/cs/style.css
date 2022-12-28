@@ -1,0 +1,104 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap'); 
+:root {
+font-family: 'Rubik Bubbles', cursive;
+}
+
+body{background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+header{
+    height: 100px;
+    background-color: red;
+}
+
+main{
+    /* background-color: blue; */
+    height: 80vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center
+}
+
+main section{
+    /* background-color: green; */
+    width: 55%;
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around
+}
+
+main section h1{
+    background-color: red;
+    width: 80%;
+    text-align: center;
+    height: 20%;
+}
+
+main section div{
+    /* background-color: orange; */
+    border: 1px dotted yellow;
+    border-radius: 1%;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main section div button {
+    width: 80%;
+    height: 20%;
+    background-color: inherit;
+    border: solid 5px white;
+    border-radius: 1%;
+    color: white;
+}
+button:active {
+    opacity: 20%;
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px) scale(80%)
+}
+
+.activated-before {
+    background-color: black;
+    text-decoration: line-through;
+    opacity: 20%;
+}
+
+.whatisthis {
+    
+}
+
+
+
+main > *{
+    height: 90%;
+    border: 2px solid white;
+    box-shadow: 2px 1px  whitesmoke;
+}
+
+aside {
+    border-radius: 1%;
+    width:20%;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    aside{
+        height: 20%;
+        width: 95%
+    }
+    main section {
+        height: 50%;
+        width: 90%
+    }
+}
