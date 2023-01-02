@@ -9,8 +9,74 @@ body{background-color: #4158D0;
 }
 
 header{
+   
     height: 100px;
     background-color: #FE77B5;
+}
+
+.Header-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin: 10px
+    /* background-color: #FFCC70; */
+}
+
+.Nav {
+    /* background-color: #FFCC70; */
+    width: 40%;
+    height: 40%;
+}
+
+/* .Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-color: red; 
+} */
+
+h1 {
+    font-family: 'Rubik Bubbles', cursive;
+    display: flex;
+  font-size: 3.25em;  
+  /* background-color: white; */
+  width:50%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline
+ 
+}
+
+h2 {
+  
+}
+
+h3 {
+    font-size: 1.25em;
+    /* width: 40vw; */
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Rubik Bubbles', cursive;
+
+}
+
+.✨{
+    border-radius:8%;
+    color: black;
+    background-color: #FFCC70;
+    font-family: 'Rubik Bubbles', cursive;
+ 
+}
+
+
+
+
+.Nav {
+    display:  flex;
+    justify-content:space-around;
+    /* background-color: firebrick; */
 }
 
 main{
@@ -23,8 +89,31 @@ main{
 aside {
     display:flex;
     flex-direction: column;
-    align-text: center;
+   align-items: center;
+   border-radius: 2.5%;
 }
+
+aside section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    height:40vh;
+
+/* background-color: #89FDED; */
+}
+
+.Information-container {
+    /* background-color: green; */
+}
+
+
+
+.👁️-container {
+    /* background-color: #FFCC70; */
+}
+
+
 
 main section{
     /* background-color: green; */
@@ -78,23 +167,18 @@ button:active {
 }
 
 #whatIsThis{
+    border-radius:8%;
+    color: black;
+    background-color: #FFCC70;
+    font-family: 'Rubik Bubbles', cursive;
  
-    width: 80%;
-    background-color: #D8066D;
+    width: 30%;
+    
     box-shadow: 0 5px #5E0409;
     transform: translateY(4px) scale(80%)
 }
 
-/* .activated-before {
-    background-color: black;
-     background-color: #FC0274;
-    border: solid 5px #FFF97E;
-    opacity: 20%;
-} */
 
-h1 {
-    color: #0E0837;
-}
 
 
 
@@ -106,21 +190,19 @@ main > *{
 }
 
 
-.Information-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: :space-around;
-}
 
-aside div {
-   
-    height: 60%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-}
+
+
+
+
+
+
+
+
+
+
+/* 
+////////////////////////////MEDIA QUERIES ///////////////////////////////////// */
 
 @media screen and (max-width:600px) {
     main {
@@ -135,4 +217,15 @@ aside div {
         height: 50%;
         width: 90%
     }
+
+}
+
+@media screen and (max-width:600px) {
+header {
+    flex-direction: column;
+}
+/* .Nav {
+    flex-direction: column;
+} */
+
 }
