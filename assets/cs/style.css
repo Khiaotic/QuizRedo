@@ -10,7 +10,7 @@ body{background-color: #4158D0;
 
 header{
     height: 100px;
-    background-color: red;
+    background-color: #FE77B5;
 }
 
 main{
@@ -36,11 +36,15 @@ main section{
     justify-content:space-around
 }
 
-main section h1{
-    background-color: red;
+main section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FE77B5;
     width: 80%;
     text-align: center;
     height: 20%;
+    
 }
 
 main section div{
@@ -59,39 +63,46 @@ main section div button {
     width: 80%;
     height: 20%;
     background-color: inherit;
-    border: solid 5px black;
-    border-radius: 1%;
+    border: solid 2px #89FDED;
+    border-radius:1.5%;
+    box-shadow: 0 5px #52C3AC;
     color: black;
+    
 }
+
 button:active {
   
-    background-color: black;
-    box-shadow: 0 5px #666;
+    /* background-color: black;
+    box-shadow: 0 5px #666; */
     transform: translateY(4px) scale(80%)
 }
 
 #whatIsThis{
  
     width: 80%;
-    background-color: white;
-    box-shadow: 0 5px yellow;
+    background-color: #D8066D;
+    box-shadow: 0 5px #5E0409;
     transform: translateY(4px) scale(80%)
 }
 
 /* .activated-before {
     background-color: black;
-    
+     background-color: #FC0274;
+    border: solid 5px #FFF97E;
     opacity: 20%;
 } */
 
+h1 {
+    color: #0E0837;
+}
 
 
 
 
 main > *{
     height: 90%;
-    border: 2px solid black;
-    box-shadow: 2px 1px  black;
+    border: 2px solid #89FDED;
+    box-shadow: 2px 1px  #52C3AC;
 }
 
 
