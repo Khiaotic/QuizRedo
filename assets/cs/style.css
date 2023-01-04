@@ -11,6 +11,7 @@ body{background-color: #4158D0;
 header{
    
     height: 100px;
+    border-radius: 25%;
     background-color: #FE77B5;
 }
 
@@ -161,23 +162,21 @@ main section div button {
 
 button:active {
   
-    /* background-color: black;
-    box-shadow: 0 5px #666; */
+  
+   
     transform: translateY(4px) scale(80%)
 }
 
-#whatIsThis{
+/* #whatIsThis{
     border-radius:8%;
     color: black;
     background-color: #FFCC70;
     font-family: 'Rubik Bubbles', cursive;
- 
     width: 30%;
-    
     box-shadow: 0 5px #5E0409;
     transform: translateY(4px) scale(80%)
-}
-
+} */
+/* ///this caused a scoping issue^^^^ */
 
 
 
