@@ -12,10 +12,10 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <link href="./assets/cs/reset.css" rel="stylesheet" />
     <link href="./assets/cs/style.css" rel="stylesheet" />
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
       rel="stylesheet"
@@ -26,25 +26,41 @@
   <body>
     <header class="Header-container">
       <h1>JavaQuizzy</h1>
-        <div class="Nav">
+      <div class="Nav">
         <!-- <nav> -->
         <button class="✨" id="startBtn">START</button>
-        <button class="✨">SCORES</button>
-        <button class="✨" onclick="window.location.href='https://github.com/Khiaotic?tab=repositories';">GITHUB</button>
+        <!-- <button class="✨">SCORES</button> -->
+        <button
+          class="✨"
+          onclick="window.location.href='file:///X:/git/bootcamp/JavaQuiz/QuizRedo/index.html';"
+        >
+          HOME
+        </button>
+        <button
+          class="✨"
+          onclick="window.location.href='file:///X:/git/bootcamp/JavaQuiz/QuizRedo/scoreboard.html';"
+        >
+          SCORES
+        </button>
+        <button
+          class="✨"
+          onclick="window.location.href='https://github.com/Khiaotic?tab=repositories';"
+        >
+          GITHUB
+        </button>
         <!-- </nav> -->
       </div>
     </header>
     <main>
-      <section>
-        <div id="question-container"> 
-          <h2 id="❔">Question</h2>
-        </div>
-        
-        <div>
-          <button id="answer-btn">Hello</button>
-          <button id="answer-btn" >Hello</button>
-          <button id="answer-btn" >Hello</button>
-          <button id="answer-btn" >Hello</button>
+      <section id="question-container">
+        <div id="question">Press START To Initiate The Quiz.....Client</div>
+
+        <div class="option" id="answer-buttons">
+      
+          <!-- <button class="btn" id ="option">Hello</button> -->
+          <!-- <button class="btn" >Hello</button>
+          <button class="btn">Hello</button>
+          <button class="btn">Hello</button> -->
         </div>
       </section>
       <aside class="the-aside">
@@ -54,20 +70,27 @@
             <p>remaining time:</p>
             <p id="⏳">01:00</p>
             <section id="displaytime"></section>
-
+          
             <div class="Progressbar-container">
-              <div id="progressbar"></div>
-              <div id="timer">
-              </div>
+              <h3 class="score">SCORE</h3>
+              <h4>0</h4>
             </div>
           </div>
         </section>
+       
 
         <section>
           <h3>¿WHAT IS THIS?</h3>
-          <p> what could this button possibly do? what is it for? who is it for?</p>
+          <p>
+            what could this button possibly do? what is it for? who is it for?
+          </p>
           <!-- // on click for random button href to video// -->
-          <button onclick="window.location.href='https://www.youtube.com/@khiaotic1657';"  id="whatIsThis">💀👁️</button>
+          <button
+            onclick="window.location.href='https://www.youtube.com/@khiaotic1657';"
+            id="whatIsThis"
+          >
+            💀👁️
+          </button>
         </section>
       </aside>
     </main>

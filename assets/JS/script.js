@@ -1,16 +1,20 @@
 //////hey khi you're doin great! im proud of you//////
 //  ${variables}
-// const myQuestions = ["what's the difference between '==' and '==='", "_____ is a programming interface for HTML and XML documents","_______ f(x)s are used to create objects in javascript","function Person (name, age, gender) {this.name=name; this.age=age; this.gender=gender;} is an example of a ______ f(x)", "______ f(x)s can only be used as a f(x) expression" ]
-var myAnswers= ["== compares the data type in value, while === compares the value and data type", "DOM", "constructor", "constructor", "arrow"];
-var wrongAnswers=["'=== isn't real','=== and == are actually the same',who'","huh, 'stop', "]
-var question =  document.getElementById("❔");
+
 const startBtnPressed = document.getElementById('startBtn');
-const questionContainer = document.getElementById;
-const questionElement = document.getElementById ('❔');
-const answerButtonElement = document.getElementById ('answer-btn');
+const questionContainer = document.getElementById ("question-container");
+const questionElement = document.getElementById ('question');
+const answerButtonElement = document.getElementById ('answer-buttons');
+////////////////////////////////////////////////////////////////////////////////////////
+const scorePoints = 100
+const maxQuestions = 4
+
+let score = 0
+
+// for loop  scorre ++ when its correct
 
 //currently set to undefined
-const shuffleQuestions, currentQuestionIndex 
+let shuffleQuestions, currentQuestionIndex 
 
 
 
@@ -26,44 +30,121 @@ function startQuiz_Timer (){
    presentNextQuestion()
    
    
+   
 }
 
 function presentNextQuestion ()  {
+    resetQuiz()
     displayQuestion(shuffleQuestions[currentQuestionIndex])
 }
 
-function displayQuestion (question)
+function displayQuestion (question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        //only want to set data if answer is correct
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+            
+        }
 
 
-const myQuestions = [
+        // ///////IT BREAKS HERE ////////////////////////
+button.addEventListener('click',  selectAnswer)
+//appending to the container and not the buttons themselves vvvv
+document.getElementById('answer-buttons').append(button)
+    })
+    
+}
+
+function resetQuiz () {
+ while (answerButtonElement.firstChild)   {
+    answerButtonElement.removeChild
+    (answerButtonElement.firstChild)
+ }  
+}
+
+
+function selectAnswer () {
+const selectButton =e.target
+const correct = selectButton.dataset.correct
+setStatusClass(document.body, correct)
+Array.from(answerButtonElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+})
+//if the answer is correct proceed to the next question
+if (selectAnswer.correct)currentQuestionIndex++
+presentNextQuestion()
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct') 
+    } else {
+            element.classList.add('wrong')
+        }
+    }
+    function clearStatusClass(element) {
+        element.classList.remove('correct')
+        element.classList.remove('wrong')
+    }
+    
+
+
+
+const questions = [
     {
-        question:"what's the difference between '==' and '==='";
+        question:"what's the difference between '==' and '==='",
         answers: [
             {text: '== compares the data type in value, while === compares the value and data type', correct: true},
             {text: '== is a programming interface for HTML and XML documents', correct: false},
-            {text: '', correct: false},
-            {text: '', correct: false},
+            {text: 'there are no differences between the two', correct: false},
+            {text: '2', correct: false}
 
         ]
-    }
+    },
+    {
+        question:"what's the difference between function and algorithm",
+        answers: [
+            {text: '', correct: false},
+            {text: 'algorithm is not apart of the developing process', correct: false},
+            {text: '', correct: true},
+            {text: 'there are no differences between the two', correct: false}
+
+        ]
+    },
+    {
+        question:"Do you have to use semicolons when coding in javascript?",
+        answers: [
+            {text: 'YES', correct: false},
+            {text: 'NAH', correct: true},
+           
+        ]
+    },
+    
 ]
+
+
 
 
 
 // WHEN I answer a question THEN I am presented with another question
 //if question index 0 and answer index 0 match go to next question
-for (var i = 0; i < myQuestions.length; i++) {
-    console.log('question:' + myQuestions[i]);
+// for (var i = 0; i < myQuestions.length; i++) {
+//     console.log('question:' + myQuestions[i]);
     
-}
+// }
 
-function selectAnswer () {
+// function selectAnswer () {
 
-}
+// }
 
-function stopMyTimer (){
-    clearInterval(startTimer);
-}
+// function stopMyTimer (){
+//     clearInterval(startTimer);
+// }
 // WHEN I answer a question incorrectly THEN time is subtracted from the clock
 
 

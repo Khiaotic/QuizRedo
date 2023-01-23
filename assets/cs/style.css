@@ -50,7 +50,9 @@ h1 {
  
 }
 
-h2 {
+#question {
+  font-family: 'Rubik Bubbles', cursive; 
+  font-size:large
   
 }
 
@@ -100,19 +102,9 @@ aside section {
     flex-direction: column;
     
     height:40vh;
-
-/* background-color: #89FDED; */
-}
-
-.Information-container {
-    /* background-color: green; */
 }
 
 
-
-.👁️-container {
-    /* background-color: #FFCC70; */
-}
 
 
 
@@ -137,6 +129,11 @@ main section h2{
     
 }
 
+#question {
+    height: 40%;
+    background-color: aliceblue;
+}
+
 main section div{
     /* background-color: orange; */
     
@@ -152,6 +149,7 @@ main section div{
 main section div button {
     width: 80%;
     height: 20%;
+   
     background-color: inherit;
     border: solid 2px #89FDED;
     border-radius:1.5%;
@@ -160,10 +158,12 @@ main section div button {
     
 }
 
+
+
 button:active {
   
   
-   
+    background-color: #FFCC70;
     transform: translateY(4px) scale(80%)
 }
 
